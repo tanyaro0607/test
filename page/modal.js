@@ -1,3 +1,5 @@
+const $ = {};
+
 //ф-я, создает модальное окно
 _createModal = () => {
   const modal = document.createElement('div');
@@ -19,21 +21,16 @@ _createModal = () => {
   return modal;
 };
 
-$.modal = (options) => {
-  const $modal = _createModal(options);
+$.modal = () => {
+  const $modal = _createModal();
   $modal.addEventListener('click', event => {
     if (event.target.dataset.close) {
-      myModal.destroy();
+      $modal.parentNode.removeChild($modal);;
     }
   });
   document.addEventListener('keydown', event => {
     if (event.key == "Escape") {
-      myModal.destroy();
+      $modal.parentNode.removeChild($modal);;
     }
   });
-  return {
-    destroy() {
-      $modal.parentNode.removeChild($modal);
-    }
-  };
 };

@@ -67,6 +67,18 @@ body {
   background-color: #DAF1DF;
 }
 
+.collection-item--first {
+  -webkit-box-ordinal-group: 0;
+      -ms-flex-order: -1;
+          order: -1;
+}
+
+.collection-item--second {
+  -webkit-box-ordinal-group: 1;
+      -ms-flex-order: 0;
+          order: 0;
+}
+
 .collection-item:last-child {
   margin-right: 0;
 }

@@ -11,7 +11,7 @@
 </head>
 
 <body>
-  <form class="form" action="#" method="post">
+  <form class="form" action="" method="post">
     <div class="questions">
       <select class="questions-select form-select form-select-sm" aria-label="Список 1">
         <option>Список 1</option>
@@ -55,16 +55,14 @@
       </select>
     </div>
     <div class="answers">
-      <ul class="answers-list">
-        <li class="answers-item">
-          <label for="text">Текст:</label>
-          <textarea id="text" name="user_text" placeholder="Напишите что-нибудь"></textarea>
-        </li>
-        <li class="answers-item">
-          <label for="massage">Текст:</label>
-          <textarea id="massage" name="user_massage" placeholder="Введите текст"></textarea>
-        </li>
-      </ul>
+      <div class="answers-item">
+        <label for="text">Текст:</label>
+        <textarea id="text" name="user_text" placeholder="Напишите что-нибудь"></textarea>
+      </div>
+      <div class="answers-item">
+        <label for="massage">Текст:</label>
+        <textarea id="massage" name="user_massage" placeholder="Введите текст"></textarea>
+      </div>
     </div>
     <button class="form-button">Отправить</button>
   </form>
